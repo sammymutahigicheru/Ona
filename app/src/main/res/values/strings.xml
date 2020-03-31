@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ona</string>
+    <string name="api_error_repos">Error loading Organisations</string>
+    <string name="creation_date_label">Created:</string>
+    <string name="updated_date_label">Last Updated:</string>
+    <string name="users_label">Users</string>
+    <string name="api_error_single_organisation">Error loading user details</string>
+    <string name="api_error_user">Error loading users</string>
+    <string name="content_description_avatar_image">Avatar Image</string>
+</resources>
