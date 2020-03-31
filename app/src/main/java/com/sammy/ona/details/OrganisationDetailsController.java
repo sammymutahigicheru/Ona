@@ -1,11 +1,12 @@
 package com.sammy.ona.details;
 
 import android.os.Bundle;
+
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.bluelinelabs.conductor.Controller;
 import com.sammy.ona.model.Organisation;
@@ -54,8 +55,6 @@ public class OrganisationDetailsController extends BaseController {
     @BindView(R.id.content) View contentContainer;
     @BindView(R.id.tv_error) TextView errorText;
     @BindView(R.id.tv_user_error) TextView userErrorText;
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
 
     public OrganisationDetailsController(Bundle bundle) {
         super(bundle);
@@ -65,7 +64,6 @@ public class OrganisationDetailsController extends BaseController {
     protected void onViewBound(View view) {
         userList.setLayoutManager(new LinearLayoutManager(view.getContext()));
         userList.setAdapter(new OrganisationDetailsAdapter());
-        toolbar.setTitle("Organisation Details");
     }
 
     @Override
