@@ -28,7 +28,7 @@ class OrganisationAdapter extends RecyclerView.Adapter<OrganisationAdapter.RepoV
 
     @Override
     public RepoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_repo_list_item, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_organisation_list_item, parent, false);
         return new RepoViewHolder(itemView, listener);
     }
 

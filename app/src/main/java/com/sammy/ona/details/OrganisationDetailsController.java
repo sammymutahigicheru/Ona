@@ -118,6 +118,6 @@ public class OrganisationDetailsController extends BaseController {
 
     @Override
     protected int layoutRes() {
-        return R.layout.screen_repo_details;
+        return R.layout.screen_organisation_details;
     }
 }

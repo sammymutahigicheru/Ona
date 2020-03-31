@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ryanharter.auto.value:auto-value-moshi-annotations:0.4.3@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ryanharter.auto.value/auto-value-moshi-annotations/0.4.3/71ce4cfccdd29066987ebe0f478d80ed47fb770/auto-value-moshi-annotations-0.4.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ryanharter.auto.value/auto-value-moshi-annotations/0.4.3/57da89280e7530030e0c1e6128df7224b962b9c9/auto-value-moshi-annotations-0.4.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ryanharter.auto.value/auto-value-moshi-annotations/0.4.3/69d3a842478cf9eeff1c43de26120845dd8bb239/auto-value-moshi-annotations-0.4.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

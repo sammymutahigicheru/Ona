@@ -60,6 +60,6 @@ public class OrganisationController extends BaseController {
 
     @Override
     protected int layoutRes() {
-        return R.layout.screen_trending_repos;
+        return R.layout.screen_organisation;
     }
 }
