@@ -55,6 +55,8 @@ public class OrganisationDetailsController extends BaseController {
     @BindView(R.id.content) View contentContainer;
     @BindView(R.id.tv_error) TextView errorText;
     @BindView(R.id.tv_user_error) TextView userErrorText;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
     public OrganisationDetailsController(Bundle bundle) {
         super(bundle);
@@ -62,6 +64,7 @@ public class OrganisationDetailsController extends BaseController {
 
     @Override
     protected void onViewBound(View view) {
+        toolbar.setTitle("Organisation's details");
         userList.setLayoutManager(new LinearLayoutManager(view.getContext()));
         userList.setAdapter(new OrganisationDetailsAdapter());
     }
