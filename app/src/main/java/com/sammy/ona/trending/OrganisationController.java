@@ -1,5 +1,6 @@
 package com.sammy.ona.trending;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
@@ -23,11 +24,14 @@ public class OrganisationController extends BaseController {
     @BindView(R.id.repo_list) RecyclerView organisationList;
     @BindView(R.id.loading_indicator) View loadingView;
     @BindView(R.id.tv_error) TextView errorText;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
     @Override
     protected void onViewBound(View view) {
         organisationList.setLayoutManager(new LinearLayoutManager(view.getContext()));
         organisationList.setAdapter(new OrganisationAdapter(presenter));
+        toolbar.setTitle("Ona Organisations");
     }
 
     @Override
