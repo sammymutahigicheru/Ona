@@ -9,6 +9,7 @@ import com.squareup.moshi.Moshi;
 public abstract class Organisation {
     @Json(name="org")
     public abstract String organisation();
+    public abstract String name();
     public abstract String city();
     public abstract String country();
     @Json(name = "date_modified")

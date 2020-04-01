@@ -9,6 +9,7 @@ import io.reactivex.Single;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.POST;
 import retrofit2.http.Path;
 
 public interface Service {
@@ -19,7 +20,7 @@ public interface Service {
     @GET("user")
     Single<OrganisationUser> getUser(@Header("Authorization") String token);
 
-    @GET("orgs")
+    @POST("orgs")
     Single<Organisation> createOrganisation(@Header("Authorization")String token,@Body Organisation organisation);
 
 }

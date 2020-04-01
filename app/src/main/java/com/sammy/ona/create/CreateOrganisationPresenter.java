@@ -17,7 +17,6 @@ public class CreateOrganisationPresenter {
             Repository repoRepository) {
         this.viewModel = viewModel;
         this.repoRepository = repoRepository;
-      //  loadRepos("d2c01abda5138831cc8f63b1e94ee053f204d0ad");
     }
 
     public void createOrganisation(String token, Organisation organisation) {

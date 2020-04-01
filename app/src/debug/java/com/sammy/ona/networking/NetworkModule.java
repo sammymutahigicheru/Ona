@@ -15,6 +15,7 @@ public abstract class NetworkModule {
     @Singleton
     static Call.Factory provideOkHttp() {
         return new OkHttpClient.Builder()
+                .addInterceptor(new AppInterceptor())
                 .build();
     }
 
