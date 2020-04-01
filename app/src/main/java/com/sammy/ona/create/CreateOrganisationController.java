@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -42,8 +43,8 @@ public class CreateOrganisationController extends BaseController {
     TextView errorText;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @BindView(R.id.action_save)
-    TextView save;
+    @BindView(R.id.save)
+    Button save;
     @BindView(R.id.et_name)
     EditText name;
 
