@@ -22,9 +22,8 @@ You will need the following to run this project:
 * Open the project folder using Android Studio IDE
 
 ### Welcome Screen
-The User will the be presented with the welcome page, where they will be presented with info about ona,ona goals and what the 
-app does.
-<img src="images/welcome.png" width="280"/>   <img src="images/goal.png" width="280"/>       <img src="images/about.png" width="280"/>
+The User will the be presented with the welcome page, where they will be presented with info about ona,ona goals and what the app does.
+<img src="images/welcome.png" width="280"/>   <img src="images/goal.png" width="280"/>   <img src="images/about.png" width="280"/>
 
 ### Main Dashboard 
 After welcome page, the use is redirected to the Main Dashboard Page, which is the Main Activity in our application. The Dashboard shows organisations, and gives the User the options to:
@@ -43,7 +42,7 @@ The User is required to add organisation, using the Add button option on the Mai
 ### Organisation's Details Page
 This page shows the organisation's Details in an easy to understand way! Just click on the organisation's card 
 
-<img src="images/organisations.png" width="280"/>   <img src="images/details.png"/> 
+<img src="images/organisations.png" width="280"/>   <img src="images/details.png" width="280"/> 
  
 
 ### Undone Parts
