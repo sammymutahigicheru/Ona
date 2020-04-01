@@ -4,6 +4,7 @@ import com.bluelinelabs.conductor.Controller;
 import com.bluelinelabs.conductor.Router;
 import com.bluelinelabs.conductor.RouterTransaction;
 import com.bluelinelabs.conductor.changehandler.FadeChangeHandler;
+import com.sammy.ona.create.CreateOrganisationController;
 import com.sammy.ona.details.OrganisationDetailsController;
 import com.sammy.ona.model.Organisation;
 
@@ -40,6 +41,15 @@ public class DefaultScreenNavigator implements ScreenNavigator {
             router.pushController(RouterTransaction.with(OrganisationDetailsController.newInstance(organisation))
                     .pushChangeHandler(new FadeChangeHandler())
                     .popChangeHandler(new FadeChangeHandler()));
+        }
+    }
+
+    @Override
+    public void goToCreateOrganisation() {
+        if (router != null){
+            router.pushController(RouterTransaction.with(new CreateOrganisationController())
+            .pushChangeHandler(new FadeChangeHandler())
+            .popChangeHandler(new FadeChangeHandler()));
         }
     }
 

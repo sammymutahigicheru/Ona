@@ -1,5 +1,6 @@
 package com.sammy.ona.trending;
 
+import com.sammy.ona.create.CreateOrganisationInterface;
 import com.sammy.ona.model.Organisation;
 
 import javax.inject.Inject;
@@ -10,7 +11,7 @@ import com.sammy.ona.ui.ScreenNavigator;
 import timber.log.Timber;
 
 @ScreenScope
-class OrganisationPresenter implements OrganisationAdapter.RepoClickedListener {
+class OrganisationPresenter implements OrganisationAdapter.RepoClickedListener, CreateOrganisationInterface {
 
     private final OrganisationViewModel viewModel;
     private final Repository repoRepository;
@@ -38,5 +39,14 @@ class OrganisationPresenter implements OrganisationAdapter.RepoClickedListener {
     public void onRepoClicked(Organisation repo) {
         Timber.d("Clicked Organisation: %s",repo.organisation());
         screenNavigator.goToOrganisationDetails(repo);
+    }
+
+    @Override
+    public void fabClicked() {
+        screenNavigator.goToCreateOrganisation();
+    }
+
+    public void goToCreateOrganisation() {
+        screenNavigator.goToCreateOrganisation();
     }
 }

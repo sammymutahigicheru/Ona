@@ -12,5 +12,7 @@ public interface ScreenNavigator {
 
     void goToOrganisationDetails(Organisation organisation);
 
+    void goToCreateOrganisation();
+
     void clear();
 }
