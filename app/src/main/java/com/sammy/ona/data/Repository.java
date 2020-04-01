@@ -78,4 +78,8 @@ public class Repository {
                 })
                 .toMaybe();
     }
+    public Single<Organisation> createOrganisation(String token,Organisation organisation){
+        return requesterProvider.get().createOrganisation(token,organisation)
+                .subscribeOn(scheduler);
+    }
 }

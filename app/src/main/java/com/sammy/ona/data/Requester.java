@@ -26,4 +26,8 @@ public class Requester {
         return service.getUser("Token "+token);
     }
 
+    Single<Organisation> createOrganisation(String token,Organisation organisation){
+        return service.createOrganisation("Token "+token,organisation);
+    }
+
 }
